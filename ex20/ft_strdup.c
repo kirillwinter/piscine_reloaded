@@ -10,4 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <stdio.h>
 
+char	*ft_strdup(char *src)
+{
+	int		len;
+	char	*arr;
+
+	len = 0;
+	while (src[len] != '\0')
+	{
+		len++;
+	}
+	arr = (char*)malloc(sizeof(*arr) * (len + 1));
+	len = 0;
+	while (src[len] != '\0')
+	{
+		arr[len] = src[len];
+		len++;
+	}
+	return (arr);
+}
