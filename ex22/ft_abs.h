@@ -1,31 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wballaba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/20 17:05:01 by wballaba          #+#    #+#             */
-/*   Updated: 2018/11/20 17:05:03 by wballaba         ###   ########.fr       */
+/*   Created: 2018/11/21 17:07:25 by wballaba          #+#    #+#             */
+/*   Updated: 2018/11/21 17:07:27 by wballaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
-{
-	int i;
-	int sqr;
-
-	i = 1;
-	sqr = 1;
-	if (nb > 0)
-	{
-		while (sqr <= nb)
-		{
-			sqr = i * i;
-			if (sqr == nb)
-				return (i);
-			i++;
-		}
-	}
-	return (0);
-}
+#ifndef FT_ABS_H
+# define FT_ABS_H
+# define ABS(x) (x > 0 ? x : -x)
+#endif
