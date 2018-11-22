@@ -10,7 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-
 NAME=display_file
 SRCS=srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_display_file.c
 INCLUDES=includes

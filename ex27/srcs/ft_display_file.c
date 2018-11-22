@@ -10,17 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./display_file.h"
+#include "display_file.h"
 
 #define BUF_SIZE 10
 
-int main(int argc, char const *argv[])
+int	main(int argc, char const *argv[])
 {
 	int		fd;
 	int		ret;
 	char	buf[BUF_SIZE + 1];
 
-	
 	if (argc == 2)
 	{
 		fd = open(argv[1], O_RDONLY);
@@ -41,4 +40,3 @@ int main(int argc, char const *argv[])
 		ft_putstr("Too many arguments.\n");
 	return (0);
 }
-
