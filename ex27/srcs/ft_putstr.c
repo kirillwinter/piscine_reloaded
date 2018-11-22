@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wballaba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/20 20:38:53 by wballaba          #+#    #+#             */
-/*   Updated: 2018/11/20 20:38:55 by wballaba         ###   ########.fr       */
+/*   Created: 2018/11/22 17:12:41 by wballaba          #+#    #+#             */
+/*   Updated: 2018/11/22 17:12:42 by wballaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "display_file.h"
 
-char	*ft_strdup(char *src)
+void	ft_putstr(char *str)
 {
-	int		len;
-	char	*arr;
+	int i;
 
-	len = 0;
-	while (src[len] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		len++;
+		ft_putchar(str[i]);
+		i++;
 	}
-	arr = (char*)malloc(sizeof(*arr) * (len + 1));
-	len = 0;
-	while (src[len] != '\0')
-	{
-		arr[len] = src[len];
-		len++;
-	}
-	return (arr);
 }

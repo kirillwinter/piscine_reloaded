@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   display_file.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wballaba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/20 20:38:53 by wballaba          #+#    #+#             */
-/*   Updated: 2018/11/20 20:38:55 by wballaba         ###   ########.fr       */
+/*   Created: 2018/11/22 16:44:34 by wballaba          #+#    #+#             */
+/*   Updated: 2018/11/22 16:44:36 by wballaba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#ifndef DISPLAY_FILE_H
+# define DISPLAY_FILE_H
 
-char	*ft_strdup(char *src)
-{
-	int		len;
-	char	*arr;
+# include <unistd.h>
+# include <fcntl.h>
 
-	len = 0;
-	while (src[len] != '\0')
-	{
-		len++;
-	}
-	arr = (char*)malloc(sizeof(*arr) * (len + 1));
-	len = 0;
-	while (src[len] != '\0')
-	{
-		arr[len] = src[len];
-		len++;
-	}
-	return (arr);
-}
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
+
+#endif
