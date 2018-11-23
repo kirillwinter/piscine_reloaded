@@ -35,7 +35,7 @@ int	main(int argc, char const *argv[])
 			ft_putstr("Error closing");
 	}
 	else if (argc == 1)
-		ft_putstr("Enter name file.\n");
+		ft_putstr("File name missing.\n");
 	else
 		ft_putstr("Too many arguments.\n");
 	return (0);

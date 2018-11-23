@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include ft_putchar.c
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {

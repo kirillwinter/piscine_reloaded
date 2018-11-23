@@ -20,6 +20,7 @@ all: $(NAME)
 $(NAME):
 	gcc -Wall -Wextra -Werror -I$(INCLUDES) $(SRCS) -o $(NAME)
 	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 clean:
 	rm -f $(OBJ)
